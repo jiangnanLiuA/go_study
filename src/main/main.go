@@ -229,8 +229,56 @@ func main() {
 	//	fmt.Println(arr[i])
 	//}
 
-	arr := [...]string{"php", "java", "golang"}
-	for k, v := range arr {
-		fmt.Println(k, v)
-	}
+	//arr := [...]string{"php", "java", "golang"}
+	//for k, v := range arr {
+	//	fmt.Println(k, v)
+	//}
+	//
+
+	//slice
+	//var arr1 []int
+	//fmt.Printf("%v--%T--%v\n", arr1, arr1, len(arr1))
+	//fmt.Println(arr1 == nil)
+	//
+	//var arr2 = []int{1, 2, 4, 67, 8, 41}
+	//fmt.Printf("%v--%T--%v\n", arr2, arr2, len(arr2))
+	//
+	//var arr3 = []int{1: 3, 3: 6, 4: 9, 6: 32}
+	//fmt.Printf("%v--%T--%v\n", arr3, arr3, len(arr3))
+
+	//var strSlice = []string{"php", "java", "golang","nodejs"}
+	//
+	//for i := 0; i < len(strSlice); i++ {
+	//	fmt.Println(strSlice[i])
+	//}
+	//
+	//for k, v := range strSlice {
+	//	fmt.Println(k, v)
+	//}
+
+	//Array -> Slice
+	//a := [5]int{31, 32, 33, 36, 37}
+	//
+	//b := a[:]
+	//fmt.Printf("%v--%T\n", b, b) //type -> []int
+	//fmt.Printf("%v--%T\n", a, a) //type -> [5]int
+	//
+	//c := a[1:4] // left open  right
+	//
+	//fmt.Printf("%v--%T\n", c, c)
+
+	//a := []string{"php", "java", "nodejs", "golang", "python"}
+	//
+	//b := a[1:]
+	//
+	//fmt.Printf("%v--%T\n", b, b)//[java nodejs golang python]
+
+	s := []int{2, 3, 24, 26, 37, 88, 96}   //2, 3, 24, 26, 37, 88, 96
+	fmt.Printf("%d--%d\n", len(s), cap(s)) //7--7
+
+	a := s[2:]                             //24, 26, 37, 88, 96
+	fmt.Printf("%d--%d\n", len(a), cap(a)) //5--5
+
+	b := s[2:5]                            //24, 26, 37
+	fmt.Printf("%d--%d\n", len(b), cap(b)) //3--5
 }
