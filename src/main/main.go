@@ -181,11 +181,56 @@ func main() {
 	//	fmt.Println("b")
 	//label:
 	//	fmt.Println("c")
-	var arr1 [3]int
-	var arr2 [4]int
-	var strArr [3]string
+	//var arr1 [3]int
+	//var arr2 [4]int
+	//var strArr [3]string
+	//
+	//fmt.Printf("%T\n", arr1)
+	//fmt.Printf("%T\n", arr2)
+	//fmt.Printf("%T\n", strArr)
 
-	fmt.Printf("%T\n", arr1)
-	fmt.Printf("%T\n", arr2)
-	fmt.Printf("%T\n", strArr)
+	//var arr1 = [3]int{1, 18, 20}
+	//fmt.Println(arr1)
+	//
+	//var strArr1 = [3]string{"php", "java", "golang"}
+	//fmt.Println(strArr1)
+	//
+	//arr2 := [3]int{1, 18, 20}
+	//fmt.Println(arr2)
+	//
+	//strArr2 := [3]string{"php", "java", "golang"}
+	//fmt.Println(strArr2)
+	//
+	//var arr [3]int
+	//arr[0] = 1
+	//arr[1] = 18
+	//arr[2] = 20
+	//
+	//fmt.Println(arr)
+	//
+	//var strArr [3]string
+	//strArr[0] = "php"
+	//strArr[1] = "java"
+	//strArr[2] = "golang"
+	//
+	//fmt.Println(strArr)
+	//
+	//var arr3 = [...]int{1, 241, 552, 66, 42, 4, 7, 5, 7, 2}
+	//arr3[1] = 1 //change val
+	//fmt.Println(arr3)
+	//fmt.Println(len(arr3))
+	//
+	//arr4 := [...]int{0: 1, 1: 10, 2: 20, 5: 50}
+	//fmt.Println(arr4)
+	//fmt.Println(len(arr4))//6
+
+	//arr := [...]string{"php", "java", "golang"}
+	//for i := 0; i < len(arr); i++ {
+	//	fmt.Println(arr[i])
+	//}
+
+	arr := [...]string{"php", "java", "golang"}
+	for k, v := range arr {
+		fmt.Println(k, v)
+	}
 }
