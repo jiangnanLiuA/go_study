@@ -172,13 +172,20 @@ func main() {
 	//		}
 	//	}
 
-	var n = 30
-	if n > 18 {
-		fmt.Println("person")
-		goto label
-	}
-	fmt.Println("a")
-	fmt.Println("b")
-label:
-	fmt.Println("c")
+	//	var n = 30
+	//	if n > 18 {
+	//		fmt.Println("person")
+	//		goto label
+	//	}
+	//	fmt.Println("a")
+	//	fmt.Println("b")
+	//label:
+	//	fmt.Println("c")
+	var arr1 [3]int
+	var arr2 [4]int
+	var strArr [3]string
+
+	fmt.Printf("%T\n", arr1)
+	fmt.Printf("%T\n", arr2)
+	fmt.Printf("%T\n", strArr)
 }
