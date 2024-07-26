@@ -273,12 +273,72 @@ func main() {
 	//
 	//fmt.Printf("%v--%T\n", b, b)//[java nodejs golang python]
 
-	s := []int{2, 3, 24, 26, 37, 88, 96}   //2, 3, 24, 26, 37, 88, 96
-	fmt.Printf("%d--%d\n", len(s), cap(s)) //7--7
+	//s := []int{2, 3, 24, 26, 37, 88, 96}   //2, 3, 24, 26, 37, 88, 96
+	//fmt.Printf("%d--%d\n", len(s), cap(s)) //7--7
+	//
+	//a := s[2:]                             //24, 26, 37, 88, 96
+	//fmt.Printf("%d--%d\n", len(a), cap(a)) //5--5
+	//
+	//b := s[2:5]                            //24, 26, 37
+	//fmt.Printf("%d--%d\n", len(b), cap(b)) //3--5
 
-	a := s[2:]                             //24, 26, 37, 88, 96
-	fmt.Printf("%d--%d\n", len(a), cap(a)) //5--5
+	//make([]TYPE, size, cap)
+	//var sliceA = make([]int, 4, 8)
+	//fmt.Println(sliceA)      //[0 0 0 0]
+	//fmt.Println(len(sliceA)) //4
+	//fmt.Println(cap(sliceA)) //8
+	//
+	//sliceA[0] = 1
+	//sliceA[1] = 11
+	//sliceA[2] = 111
+	//sliceA[3] = 1111
+	//fmt.Println(sliceA) //[1 11 111 1111]
 
-	b := s[2:5]                            //24, 26, 37
-	fmt.Printf("%d--%d\n", len(b), cap(b)) //3--5
+	//var sliceA []int
+	//
+	//sliceA = append(sliceA, 12)
+	//sliceA = append(sliceA, 17)
+	//sliceA = append(sliceA, 18, 24, 32, 48, 64)
+	//sliceA = append(sliceA, 72, 96)
+	//
+	//fmt.Println(sliceA)      //[12 17 18 24 32 48 64]
+	//fmt.Println(len(sliceA)) //7
+	//fmt.Println(cap(sliceA)) //8
+
+	//sliceA := []string{"php", "java"}
+	//sliceB := []string{"nodejs","golang"}
+	//
+	//sliceA = append(sliceA,sliceB...)
+	//fmt.Println(sliceA)
+
+	//var sliceA []int
+	//for i := 1; i < 10; i++ {
+	//	sliceA = append(sliceA, i)
+	//	fmt.Printf("%v--len:%d--cap:%d\n", sliceA, len(sliceA), cap(sliceA))
+	//}
+
+	//sliceA := []int{1, 2, 3, 4}
+	//sliceB := sliceA
+	//sliceB[0] = 0
+	//fmt.Println(sliceA)
+	//fmt.Println(sliceB)
+
+	//sliceA := []int{1, 2, 3, 4}
+	//sliceB := make([]int, 4, 4)
+	//
+	//copy(sliceB, sliceA)
+	//
+	//fmt.Println(sliceA)
+	//fmt.Println(sliceB)
+	//
+	//sliceB[0] = 0
+	//fmt.Println(sliceA)
+	//fmt.Println(sliceB)
+
+	//delete element
+	a := []int{31, 32, 33, 34, 35, 36, 37}
+	//delete index 3
+	a = append(a[:3], a[4:]...)
+	fmt.Println(a)
+
 }
